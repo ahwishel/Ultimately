@@ -1,0 +1,45 @@
+*{
+    font-family: 'Mulish', sans-serif;
+}
+a{
+    text-decoration: none;
+    color:black;
+    width: 5px;
+}
+#navi ul{
+    list-style-type: none;
+}
+#navi li{
+    margin-left: 320px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-weight: bold;
+}
+
+@keyframes border{
+    0% {border-top-color: black;}
+    25% {border-right-color: black;}
+    50% {border-bottom-color: black;}
+    75% {border-left-color: black;}
+    100% {border-top-color: white;}
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 48%;
+    top: 5%;
+}
+
+#navi li:hover{
+    animation-name: border;
+    animation-duration: 1s;
+    /* background-color: #ffffff; */
+}
+#navi{
+    padding: 20px;
+    border-radius: 10px;
+}

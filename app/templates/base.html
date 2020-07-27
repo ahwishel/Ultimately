@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ultimately &copy; - Finish your ultimate goal today!</title>
+        <meta charset="utf-8" lang="en-US">
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        {% raw %}
+        <link href="../static/nav.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet"> 
+        <link href="../static/checklist.css" rel="stylesheet">
+        <link href="../static/Images/favicon.png" rel="icon">
+        {% endraw %}
+    </head>
+    <body>
+        <nav id="navi">
+            <ul>
+                
+                <a href="/checklist"><li>Checklist</li></a>
+                {% raw %}
+                <img id="logo" src="../static/Images/checkmark.png" alt="logo">
+                {% endraw %}
+                <a href="/about"><li>About us</li></a>
+            </ul>
+        </nav>
+        {% block page %}{% endblock %}
+    </body>
+</html>

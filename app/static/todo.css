@@ -1,0 +1,18 @@
+*{
+    font-family: 'Mulish', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.task{
+    /* text-align: center; */
+    font-size: 20pt;
+    margin-top: 5px;
+    background-color: lightgrey;
+}
+/* .task p{
+    font-size: 20pt;
+} */

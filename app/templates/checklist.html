@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block page %}
+<div id="checklist">
+    <h1 id="ulti-label">Ultimately...</h1>
+    <form id="goal">
+        <input id="goal-field" name="ult-goal" type="text" placeholder="I want..."> 
+    </form>
+    <iframe id="checklist-frame" src="/todo"></iframe>
+</div>
+
+{% raw %}
+<img id="bottom-logo" src="../static/Images/ultimately.png" alt="logo">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+{% endraw %}
+<script src="../static/scripts/goal.js"></script>
+{% endblock %}
