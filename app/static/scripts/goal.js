@@ -39,12 +39,14 @@ function removeElement(elementId) {
 }
 
 document.addEventListener("click", function (event) {
-    if (event.target.id !== "goal-field" && !goalAdded) {
+    if (event.target.id !== "goal-field" && !goalAdded && document.getElementById("goal").elements["ult-goal"].value.length != 0) {
         var goal = document.getElementById("goal").elements["ult-goal"].value
         // console.log("clicked not in goal field") -> replace with code to convert it to an h3 element
         addGoal('goal', 'label', 'temp-goal', 'ult-goal', goal)
+        // console.log(goal.length)
         removeElement('goal-field')
     } if(event.target.id == "temp-goal" && goalAdded){
+        console.log("goal added already")
         var goal = document.getElementById("temp-goal").innerText
         removeElement('temp-goal')
         addInput('goal', 'input', 'goal-field', 'ult-goal', goal)
