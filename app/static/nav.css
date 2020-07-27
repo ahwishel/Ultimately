@@ -10,7 +10,7 @@ a{
     list-style-type: none;
 }
 #navi li{
-    margin-left: 320px;
+    margin-left: 175px;
     display: inline-block;
     padding: 10px;
     border-radius: 10px;
@@ -27,11 +27,12 @@ a{
 }
 
 #logo{
+    /* margin: 0 auto; */
     width: 50px;
     height: 50px;
     position: absolute;
-    left: 48%;
-    top: 5%;
+    left: 48.5%;
+    /* top: 5%; */
 }
 
 #navi li:hover{
@@ -40,6 +41,9 @@ a{
     /* background-color: #ffffff; */
 }
 #navi{
+    min-width: 200px;
+    max-width: 800px;
+    margin:auto;
     padding: 20px;
     border-radius: 10px;
 }

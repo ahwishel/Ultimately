@@ -48,10 +48,14 @@
     75% {border: 3px solid;border-left-color: white;}
     100% {border: 3px solid;border-top-color: white;}
 }
+#bottom-logo-container{
+    text-align: center;
+}
 #bottom-logo{
-    position: absolute;
+    position: relative;
     width: 100px;
     height: 100px;
-    left: 45.7%;
+    display: inline-block;
+    /* left: 45.7%; */
     bottom: 0%;
 }
