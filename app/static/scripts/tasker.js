@@ -37,11 +37,16 @@ document.addEventListener('click', (event) => {
         var input = document.getElementById("tempIpt")
         if(input !== null){
             var value = input.value;
-            removeElementById("tempIpt")
+            if(value != ""){
+                removeElementById("tempIpt")
             var task = addElement("list", "li", `${taskID++}`, 'task')
             task.setAttribute("onclick", "removeElement(this)")
             task.innerText = value
             tasked = true
+            }
+            var addTask = addElement("list", "li", "addButton", 'task') //made it part of the task class for style
+            addTask.innerText = "+"
+            addTask.setAttribute("onclick", "createTask(this)")
         }
     }
 })
