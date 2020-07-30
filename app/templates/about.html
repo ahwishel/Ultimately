@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block page %}
+<h1 id="title"> Front-end + JS Developer </h1>
+<div id="myImg">
+    {% raw %}
+    <img id="headshotImg" src="../static/Images/mypic.jpg" alt="myimage">
+    {% endraw %}
+</div>
+<div id="bodyText">
+    <br>
+    <p id="bio-paragraph">
+        My name is Abdallah Hwishel, I am a computer science student at the University of Maryland, College Park. This is my first flask webapp.
+        This webpp is a simple, minimalist webapp that allows the user to focus only on their most important goal of the day. 
+        No extraneous goals. No distractions. The purpose of this webapp was really just for the sake of learning how to use flask, how to launch
+        a webapp on the internet, how to maintain source control, and more. I hope it is of use for you as it is for me!
+    </p>
+    <br>
+    <hr>
+    <br>
+    <p id="promote">
+        I'm currently looking for WebDev internships in hopes of expanding on my skillset and gain some experience on the field working with an actual team.
+        If you are a recruiter or developer and would like to contact me, please refer to this <a href="https://www.linkedin.com/in/abdallah-hwishel-6685a7188/">link</a>
+    </p>
+</div>
+
+<div id="bottomLogo">
+    {% raw %}
+    <img id="bottomImg" src="../static/Images/ultimately.png" alt="bottom logo">
+    {% endraw %}
+</div>
+
+
+
+
+{% endblock %}

@@ -8,7 +8,7 @@ def home():
 
 @flaskApp.route('/about')
 def about():
-    return "TBA"
+    return render_template('about.html')
 
 @flaskApp.route('/todo')
 def todo():
