@@ -43,10 +43,10 @@ document.addEventListener('click', (event) => {
             task.setAttribute("onclick", "removeElement(this)")
             task.innerText = value
             tasked = true
-            }
             var addTask = addElement("list", "li", "addButton", 'task') //made it part of the task class for style
             addTask.innerText = "+"
             addTask.setAttribute("onclick", "createTask(this)")
+            }
         }
     }
 })
